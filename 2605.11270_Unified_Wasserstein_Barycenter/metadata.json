@@ -1,0 +1,10 @@
+{
+  "variant": "exact_wasserstein_barycenter",
+  "id": "2605.11270",
+  "slug": "2605.11270_Unified_Wasserstein_Barycenter",
+  "title": "A Unified Approach for Computing Wasserstein Barycenters of Discrete and Continuous Measures",
+  "status": "arXiv preprint",
+  "reason": "用 Fisher-Rao primal mirror descent 统一离散、连续与混合输入的 exact barycenter。",
+  "pdf_url": "https://arxiv.org/pdf/2605.11270.pdf",
+  "abs_url": "https://arxiv.org/abs/2605.11270"
+}

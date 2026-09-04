@@ -1,0 +1,11 @@
+{
+  "variant": "multi_marginal_ot",
+  "id": "2509.22494",
+  "slug": "2509.22494_Dynamical_MMOT",
+  "title": "A dynamical formulation of multi-marginal optimal transport",
+  "status": "arXiv preprint",
+  "reason": "对半凸 multi-marginal cost 给出动态 primal-dual/convex 表述并联系 quasi-Monge 解。",
+  "pdf_url": "https://arxiv.org/pdf/2509.22494.pdf",
+  "abs_url": "https://arxiv.org/abs/2509.22494",
+  "code_url": "https://github.com/yairshenfeld/DMMOT"
+}

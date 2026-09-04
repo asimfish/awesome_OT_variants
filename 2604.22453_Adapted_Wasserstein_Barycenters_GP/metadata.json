@@ -1,0 +1,9 @@
+{
+  "variant": "causal_ot",
+  "id": "2604.22453",
+  "slug": "2604.22453_Adapted_Wasserstein_Barycenters_GP",
+  "title": "Adapted Wasserstein Barycenters of Gaussian Processes",
+  "reason": "最新 adapted/causal transport 与 barycenter 在随机过程中的代表。",
+  "pdf_url": "https://arxiv.org/pdf/2604.22453.pdf",
+  "abs_url": "https://arxiv.org/abs/2604.22453"
+}

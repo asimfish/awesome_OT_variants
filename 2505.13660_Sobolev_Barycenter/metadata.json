@@ -1,0 +1,11 @@
+{
+  "variant": "exact_wasserstein_barycenter",
+  "id": "2505.13660",
+  "slug": "2505.13660_Sobolev_Barycenter",
+  "title": "Sobolev Gradient Ascent for Optimal Transport: Barycenter Optimization and Convergence Analysis",
+  "status": "ICLR 2026",
+  "reason": "在规则网格上用无约束 concave dual 与 Sobolev gradient 求 exact unregularized barycenter。",
+  "pdf_url": "https://arxiv.org/pdf/2505.13660.pdf",
+  "abs_url": "https://arxiv.org/abs/2505.13660",
+  "venue_url": "https://openreview.net/forum?id=IjL1xEoxXi"
+}

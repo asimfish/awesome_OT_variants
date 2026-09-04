@@ -1,0 +1,10 @@
+{
+  "variant": "riemannian_entropic_optimal_transport",
+  "id": "2605.04255",
+  "slug": "2605.04255_Entropic_Riemannian_Neural_OT",
+  "title": "Entropic Riemannian Neural Optimal Transport",
+  "status": "arXiv preprint",
+  "reason": "把 intrinsic entropic OT、neural Schrödinger potential 与流形上的 coupling-to-map surrogate 结合。",
+  "pdf_url": "https://arxiv.org/pdf/2605.04255.pdf",
+  "abs_url": "https://arxiv.org/abs/2605.04255"
+}

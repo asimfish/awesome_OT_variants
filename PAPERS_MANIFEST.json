@@ -1,0 +1,134 @@
+[
+  {
+    "variant": "multi_marginal_ot",
+    "id": "2412.16385",
+    "slug": "2412.16385_CollisionDynamics_MultiMarginalOT",
+    "title": "Collision-based Dynamics for Multi-Marginal Optimal Transport",
+    "reason": "近年针对 MMOT 计算瓶颈的随机/动力学算法代表。",
+    "pdf_url": "https://arxiv.org/pdf/2412.16385.pdf",
+    "abs_url": "https://arxiv.org/abs/2412.16385",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2412.16385_CollisionDynamics_MultiMarginalOT",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "wasserstein_barycenter",
+    "id": "2602.05976",
+    "slug": "2602.05976_Signed_Wasserstein_Barycenter",
+    "title": "The Signed Wasserstein Barycenter Problem",
+    "reason": "近年扩展 Wasserstein barycenter 到带符号/任意权重情形的理论代表。",
+    "pdf_url": "https://arxiv.org/pdf/2602.05976.pdf",
+    "abs_url": "https://arxiv.org/abs/2602.05976",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2602.05976_Signed_Wasserstein_Barycenter",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "partial_ot",
+    "id": "2410.16718",
+    "slug": "2410.16718_OptimalPartialTransport_GraphMatching",
+    "title": "Learning Partial Graph Matching via Optimal Partial Transport",
+    "reason": "近年 partial OT 在部分图匹配/不完整对应中的应用代表。",
+    "pdf_url": "https://arxiv.org/pdf/2410.16718.pdf",
+    "abs_url": "https://arxiv.org/abs/2410.16718",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2410.16718_OptimalPartialTransport_GraphMatching",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "gromov_wasserstein",
+    "id": "2408.08233",
+    "slug": "2408.08233_Z_Gromov_Wasserstein",
+    "title": "The Z-Gromov-Wasserstein Distance",
+    "reason": "近年扩展 GW 以处理更复杂结构对象的理论代表。",
+    "pdf_url": "https://arxiv.org/pdf/2408.08233.pdf",
+    "abs_url": "https://arxiv.org/abs/2408.08233",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2408.08233_Z_Gromov_Wasserstein",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "schrodinger_bridge",
+    "id": "2603.18992",
+    "slug": "2603.18992_Foundations_SB_Generative_Modeling",
+    "title": "Foundations of Schrödinger Bridges for Generative Modeling",
+    "reason": "2026 年 SB 与生成建模统一视角的基础性综述/理论代表。",
+    "pdf_url": "https://arxiv.org/pdf/2603.18992.pdf",
+    "abs_url": "https://arxiv.org/abs/2603.18992",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2603.18992_Foundations_SB_Generative_Modeling",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "causal_ot",
+    "id": "2604.22453",
+    "slug": "2604.22453_Adapted_Wasserstein_Barycenters_GP",
+    "title": "Adapted Wasserstein Barycenters of Gaussian Processes",
+    "reason": "最新 adapted/causal transport 与 barycenter 在随机过程中的代表。",
+    "pdf_url": "https://arxiv.org/pdf/2604.22453.pdf",
+    "abs_url": "https://arxiv.org/abs/2604.22453",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2604.22453_Adapted_Wasserstein_Barycenters_GP",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "entropic_ot_systems",
+    "id": "2602.03067",
+    "slug": "2602.03067_FlashSinkhorn",
+    "title": "FlashSinkhorn: IO-Aware Entropic Optimal Transport on GPU",
+    "reason": "2026 年 GPU 上 IO-aware stabilized Sinkhorn 的系统代表，兼顾 forward、gradient 与 HVP。",
+    "pdf_url": "https://arxiv.org/pdf/2602.03067.pdf",
+    "abs_url": "https://arxiv.org/abs/2602.03067",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2602.03067_FlashSinkhorn",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "riemannian_optimal_transport",
+    "id": "2602.03566",
+    "slug": "2602.03566_Riemannian_Neural_OT",
+    "title": "Riemannian Neural Optimal Transport",
+    "reason": "2026 年流形上 amortized、非熵正则 neural OT map 的代表，并分析离散 map 的维数灾难。",
+    "pdf_url": "https://arxiv.org/pdf/2602.03566.pdf",
+    "abs_url": "https://arxiv.org/abs/2602.03566",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2602.03566_Riemannian_Neural_OT",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "riemannian_entropic_optimal_transport",
+    "id": "2605.04255",
+    "slug": "2605.04255_Entropic_Riemannian_Neural_OT",
+    "title": "Entropic Riemannian Neural Optimal Transport",
+    "reason": "2026 年将 intrinsic entropic OT、neural Schrödinger potential 与流形 barycentric projection 结合的代表。",
+    "pdf_url": "https://arxiv.org/pdf/2605.04255.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.04255",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2605.04255_Entropic_Riemannian_Neural_OT",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "exact_wasserstein_barycenter",
+    "id": "2505.13660",
+    "slug": "2505.13660_Sobolev_Barycenter",
+    "title": "Sobolev Gradient Ascent for Optimal Transport: Barycenter Optimization and Convergence Analysis",
+    "reason": "ICLR 2026 的 exact unregularized grid barycenter 方法，以 Sobolev gradient 和无约束 concave dual 避免熵偏差。",
+    "pdf_url": "https://arxiv.org/pdf/2505.13660.pdf",
+    "abs_url": "https://arxiv.org/abs/2505.13660",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2505.13660_Sobolev_Barycenter",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "exact_wasserstein_barycenter",
+    "id": "2605.11270",
+    "slug": "2605.11270_Unified_Wasserstein_Barycenter",
+    "title": "A Unified Approach for Computing Wasserstein Barycenters of Discrete and Continuous Measures",
+    "reason": "2026 年用 Fisher-Rao primal mirror descent 统一离散、连续与异质输入 exact barycenter 的代表。",
+    "pdf_url": "https://arxiv.org/pdf/2605.11270.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.11270",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2605.11270_Unified_Wasserstein_Barycenter",
+    "download_status": "downloaded"
+  },
+  {
+    "variant": "multi_marginal_ot",
+    "id": "2509.22494",
+    "slug": "2509.22494_Dynamical_MMOT",
+    "title": "A dynamical formulation of multi-marginal optimal transport",
+    "reason": "2025 年对半凸 multi-marginal cost 建立动态 primal-dual/convex 表述并联系 quasi-Monge 解的代表。",
+    "pdf_url": "https://arxiv.org/pdf/2509.22494.pdf",
+    "abs_url": "https://arxiv.org/abs/2509.22494",
+    "local_dir": "/Users/liyufeng/Desktop/research/ot_variants_survey/2509.22494_Dynamical_MMOT",
+    "download_status": "downloaded"
+  }
+]

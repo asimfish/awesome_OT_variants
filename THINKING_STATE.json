@@ -1,0 +1,97 @@
+{
+  "workflow": "auto_think",
+  "version": 1,
+  "status": "completed",
+  "round": 1,
+  "max_rounds": 200,
+  "topic": "Explain and survey six Optimal Transport variants: multi-marginal OT, Wasserstein barycenter, partial OT, Gromov-Wasserstein, Schrödinger Bridge, and causal/adapted OT.",
+  "subtopics": [
+    "multi_marginal_ot",
+    "wasserstein_barycenter",
+    "partial_ot",
+    "gromov_wasserstein",
+    "schrodinger_bridge",
+    "causal_adapted_ot"
+  ],
+  "subtopics_done": [
+    "multi_marginal_ot",
+    "wasserstein_barycenter",
+    "partial_ot",
+    "gromov_wasserstein",
+    "schrodinger_bridge",
+    "causal_adapted_ot"
+  ],
+  "papers": [
+    {
+      "id": "arxiv:2412.16385",
+      "title": "Collision-based Dynamics for Multi-Marginal Optimal Transport",
+      "year": 2024,
+      "source_url": "https://arxiv.org/abs/2412.16385",
+      "round_added": 1
+    },
+    {
+      "id": "arxiv:2602.05976",
+      "title": "The Signed Wasserstein Barycenter Problem",
+      "year": 2026,
+      "source_url": "https://arxiv.org/abs/2602.05976",
+      "round_added": 1
+    },
+    {
+      "id": "arxiv:2410.16718",
+      "title": "Learning Partial Graph Matching via Optimal Partial Transport",
+      "year": 2024,
+      "source_url": "https://arxiv.org/abs/2410.16718",
+      "round_added": 1
+    },
+    {
+      "id": "arxiv:2408.08233",
+      "title": "The Z-Gromov-Wasserstein Distance",
+      "year": 2024,
+      "source_url": "https://arxiv.org/abs/2408.08233",
+      "round_added": 1
+    },
+    {
+      "id": "arxiv:2603.18992",
+      "title": "Foundations of Schrödinger Bridges for Generative Modeling",
+      "year": 2026,
+      "source_url": "https://arxiv.org/abs/2603.18992",
+      "round_added": 1
+    },
+    {
+      "id": "arxiv:2604.22453",
+      "title": "Adapted Wasserstein Barycenters of Gaussian Processes",
+      "year": 2026,
+      "source_url": "https://arxiv.org/abs/2604.22453",
+      "round_added": 1
+    }
+  ],
+  "knowledge_graph": {
+    "nodes": [
+      {"id": "concept:multi_marginal_ot", "type": "concept", "label": "Multi-marginal OT"},
+      {"id": "concept:wasserstein_barycenter", "type": "concept", "label": "Wasserstein barycenter"},
+      {"id": "concept:partial_ot", "type": "concept", "label": "Partial OT"},
+      {"id": "concept:gromov_wasserstein", "type": "concept", "label": "Gromov-Wasserstein"},
+      {"id": "concept:schrodinger_bridge", "type": "concept", "label": "Schrödinger Bridge"},
+      {"id": "concept:causal_adapted_ot", "type": "concept", "label": "Causal/adapted OT"},
+      {"id": "paper:arxiv:2412.16385", "type": "paper", "label": "Collision-based Dynamics for Multi-Marginal Optimal Transport"},
+      {"id": "paper:arxiv:2602.05976", "type": "paper", "label": "The Signed Wasserstein Barycenter Problem"},
+      {"id": "paper:arxiv:2410.16718", "type": "paper", "label": "Learning Partial Graph Matching via Optimal Partial Transport"},
+      {"id": "paper:arxiv:2408.08233", "type": "paper", "label": "The Z-Gromov-Wasserstein Distance"},
+      {"id": "paper:arxiv:2603.18992", "type": "paper", "label": "Foundations of Schrödinger Bridges for Generative Modeling"},
+      {"id": "paper:arxiv:2604.22453", "type": "paper", "label": "Adapted Wasserstein Barycenters of Gaussian Processes"}
+    ],
+    "edges": [
+      {"from": "paper:arxiv:2412.16385", "to": "concept:multi_marginal_ot", "relation": "studies"},
+      {"from": "paper:arxiv:2602.05976", "to": "concept:wasserstein_barycenter", "relation": "extends"},
+      {"from": "paper:arxiv:2410.16718", "to": "concept:partial_ot", "relation": "applies_to"},
+      {"from": "paper:arxiv:2408.08233", "to": "concept:gromov_wasserstein", "relation": "extends"},
+      {"from": "paper:arxiv:2603.18992", "to": "concept:schrodinger_bridge", "relation": "studies"},
+      {"from": "paper:arxiv:2604.22453", "to": "concept:causal_adapted_ot", "relation": "studies"},
+      {"from": "concept:schrodinger_bridge", "to": "concept:multi_marginal_ot", "relation": "extends"},
+      {"from": "concept:causal_adapted_ot", "to": "concept:wasserstein_barycenter", "relation": "extends"}
+    ]
+  },
+  "last_query_fingerprint": "ot variants survey arxiv 2024 2026: multi-marginal OT; signed Wasserstein barycenter; optimal partial transport graph matching; Z-Gromov-Wasserstein; Schrödinger bridge generative modeling; adapted Wasserstein barycenters Gaussian processes",
+  "checkpoint_at": "2026-04-28T22:39:00+08:00",
+  "notes": "Created comprehensive report and six Chinese reading reports under ot_variants_survey. No existing research files outside this directory were modified."
+}

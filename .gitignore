@@ -1,0 +1,4 @@
+# PDFs and extracted full texts stay in the local survey folder (copyright + size); see README
+*.pdf
+*/paper.txt
+.DS_Store

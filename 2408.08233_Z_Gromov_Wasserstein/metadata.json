@@ -1,0 +1,9 @@
+{
+  "variant": "gromov_wasserstein",
+  "id": "2408.08233",
+  "slug": "2408.08233_Z_Gromov_Wasserstein",
+  "title": "The Z-Gromov-Wasserstein Distance",
+  "reason": "近年扩展 GW 以处理更复杂结构对象的理论代表。",
+  "pdf_url": "https://arxiv.org/pdf/2408.08233.pdf",
+  "abs_url": "https://arxiv.org/abs/2408.08233"
+}

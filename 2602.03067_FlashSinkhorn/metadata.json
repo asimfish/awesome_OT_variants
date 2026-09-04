@@ -1,0 +1,11 @@
+{
+  "variant": "entropic_ot_systems",
+  "id": "2602.03067",
+  "slug": "2602.03067_FlashSinkhorn",
+  "title": "FlashSinkhorn: IO-Aware Entropic Optimal Transport on GPU",
+  "status": "ICML 2026 Oral",
+  "reason": "将 stabilized Sinkhorn 改写为 attention-like LogSumExp，并用 Triton 实现 IO-aware streaming。",
+  "pdf_url": "https://arxiv.org/pdf/2602.03067.pdf",
+  "abs_url": "https://arxiv.org/abs/2602.03067",
+  "code_url": "https://github.com/ot-triton-lab/flash-sinkhorn"
+}

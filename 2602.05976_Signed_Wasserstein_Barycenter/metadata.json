@@ -1,0 +1,9 @@
+{
+  "variant": "wasserstein_barycenter",
+  "id": "2602.05976",
+  "slug": "2602.05976_Signed_Wasserstein_Barycenter",
+  "title": "The Signed Wasserstein Barycenter Problem",
+  "reason": "近年扩展 Wasserstein barycenter 到带符号/任意权重情形的理论代表。",
+  "pdf_url": "https://arxiv.org/pdf/2602.05976.pdf",
+  "abs_url": "https://arxiv.org/abs/2602.05976"
+}

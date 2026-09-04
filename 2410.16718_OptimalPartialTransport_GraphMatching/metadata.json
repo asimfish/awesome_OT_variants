@@ -1,0 +1,9 @@
+{
+  "variant": "partial_ot",
+  "id": "2410.16718",
+  "slug": "2410.16718_OptimalPartialTransport_GraphMatching",
+  "title": "Learning Partial Graph Matching via Optimal Partial Transport",
+  "reason": "近年 partial OT 在部分图匹配/不完整对应中的应用代表。",
+  "pdf_url": "https://arxiv.org/pdf/2410.16718.pdf",
+  "abs_url": "https://arxiv.org/abs/2410.16718"
+}

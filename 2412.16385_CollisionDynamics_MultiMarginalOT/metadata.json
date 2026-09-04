@@ -1,0 +1,9 @@
+{
+  "variant": "multi_marginal_ot",
+  "id": "2412.16385",
+  "slug": "2412.16385_CollisionDynamics_MultiMarginalOT",
+  "title": "Collision-based Dynamics for Multi-Marginal Optimal Transport",
+  "reason": "近年针对 MMOT 计算瓶颈的随机/动力学算法代表。",
+  "pdf_url": "https://arxiv.org/pdf/2412.16385.pdf",
+  "abs_url": "https://arxiv.org/abs/2412.16385"
+}

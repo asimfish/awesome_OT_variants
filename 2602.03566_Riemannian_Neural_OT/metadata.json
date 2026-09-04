@@ -1,0 +1,10 @@
+{
+  "variant": "riemannian_optimal_transport",
+  "id": "2602.03566",
+  "slug": "2602.03566_Riemannian_Neural_OT",
+  "title": "Riemannian Neural Optimal Transport",
+  "status": "arXiv preprint",
+  "reason": "用连续神经势与内在 c-transform 构造流形上的 amortized 非熵 OT map，并分析维数灾难。",
+  "pdf_url": "https://arxiv.org/pdf/2602.03566.pdf",
+  "abs_url": "https://arxiv.org/abs/2602.03566"
+}

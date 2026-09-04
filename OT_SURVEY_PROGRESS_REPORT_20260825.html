@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OT 学习与调研项目汇报 · 2026-08-25</title>
+<style>
+  :root{
+    --ink:#1a2332; --sub:#5a6a7e; --line:#dde4ec; --bg:#f6f8fb; --card:#ffffff;
+    --blue:#2563eb; --teal:#0d9488; --amber:#b45309; --red:#b91c1c; --green:#15803d;
+    --chip-p:#dcfce7; --chip-a:#dbeafe; --chip-r:#fef3c7; --chip-b:#ede9fe;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+       line-height:1.75;font-size:15px}
+  .wrap{max-width:1080px;margin:0 auto;padding:32px 40px 80px}
+  header.hero{background:linear-gradient(135deg,#1e3a8a 0%,#0f766e 100%);color:#fff;
+       border-radius:14px;padding:34px 38px;margin-bottom:26px}
+  header.hero h1{margin:0 0 8px;font-size:26px;letter-spacing:.5px}
+  header.hero .meta{opacity:.92;font-size:13.5px}
+  header.hero .meta span{margin-right:18px}
+  h2{font-size:20px;margin:42px 0 14px;padding-left:12px;border-left:5px solid var(--blue)}
+  h3{font-size:16.5px;margin:26px 0 10px;color:#0f3563}
+  p{margin:8px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:14px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.8px;background:#fff}
+  th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+  th{background:#eef3fa;font-weight:600;white-space:nowrap}
+  tr:nth-child(even) td{background:#fafcfe}
+  code{background:#eef2f7;border-radius:4px;padding:1px 6px;font-size:12.8px;font-family:"SF Mono",Menlo,Consolas,monospace}
+  .chip{display:inline-block;border-radius:999px;padding:0 10px;font-size:12px;font-weight:600;line-height:20px;margin-right:4px}
+  .P{background:var(--chip-p);color:var(--green)} .A{background:var(--chip-a);color:var(--blue)}
+  .R{background:var(--chip-r);color:var(--amber)} .B{background:var(--chip-b);color:#6d28d9}
+  .ok{color:var(--green);font-weight:600} .warn{color:var(--amber);font-weight:600}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0}
+  .toc a{text-decoration:none;color:var(--blue);background:#e8effc;border-radius:8px;padding:4px 12px;font-size:13px}
+  .note{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;font-size:13.5px;margin:12px 0}
+  .evidence{color:var(--sub);font-size:12.5px}
+  ul{margin:6px 0;padding-left:22px}
+  li{margin:4px 0}
+  .svgbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;overflow-x:auto}
+  footer{margin-top:56px;color:var(--sub);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px}
+  a{color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Optimal Transport 学习与调研项目 · 阶段汇报</h1>
+  <div class="meta">
+    <span>汇报日期：2026-08-25</span>
+    <span>项目目录：<code>~/Desktop/research/ot_variants_survey/</code></span>
+    <span>状态：两轮需求全部交付，时效复检通过</span>
+  </div>
+  <div class="toc">
+    <a href="#s1">§1 项目概览</a><a href="#s2">§2 资料库结构</a><a href="#s3">§3 调研成果统计</a>
+    <a href="#s4">§4 核心发现</a><a href="#s5">§5 质量核验</a><a href="#s6">§6 学习路线</a><a href="#s7">§7 下一步</a>
+  </div>
+</header>
+
+<h2 id="s1">§1 项目概览：需求 → 交付对照</h2>
+<div class="card">
+<p>本项目服务于「系统学习 OT 理论 + 跟踪 2024–2026 前沿」。两轮需求均来自会话「OT」，逐项交付如下：</p>
+<table>
+<tr><th>轮次</th><th>需求</th><th>交付物</th><th>状态</th></tr>
+<tr><td rowspan="2">第一轮<br>(2026-07-29)</td>
+    <td>调研 OT 最新研究：FlashSinkhorn、黎曼流形 OT、Barycenter 等</td>
+    <td><code>OT_FRONTIER_2026.md</code>（8 节前沿分析）＋ 12 个论文精读包（原文 PDF＋抽取文本＋中文精读报告＋元数据）</td>
+    <td class="ok">完成</td></tr>
+<tr><td>解读 8 本教材，重点深入 <code>OT_book</code> 与 <code>Multi_OT_book</code></td>
+    <td><code>BOOK_READING_GUIDE.md</code>（逐章阅读地图、IPFP/Dykstra 核心推导导读、12 周路线）</td>
+    <td class="ok">完成</td></tr>
+<tr><td rowspan="2">第二轮<br>(2026-07-31)</td>
+    <td>另找开源随机过程教材 PDF</td>
+    <td>Gallager《Discrete Stochastic Processes》392 页（MIT OCW 官方 9 份 PDF 合并，CC BY-NC-SA 4.0，SHA-256 与许可记录见 <code>book/OPEN_SOURCE_BOOKS.md</code>）</td>
+    <td class="ok">完成</td></tr>
+<tr><td>深度调研参考清单：论文＋入门＋课程＋博客，覆盖近两年 NeurIPS / ICML / ICLR / ECCV / ICCV / CVPR / AAAI</td>
+    <td><code>OT_DEEP_REFERENCE_CATALOG_2026.md</code>（530 行：111 篇正式/已接收＋11 篇预印本＋教材/课程/博客/软件栈＋5 条专题路线）</td>
+    <td class="ok">完成</td></tr>
+</table>
+<p class="evidence">证据指针：会话「OT」用户消息 id 5896492 / 5990603；交付确认见最终消息 id 5992797；磁盘核验见 §5。</p>
+</div>
+
+<h2 id="s2">§2 资料库结构（七层架构）</h2>
+<div class="svgbox">
+<svg viewBox="0 0 1000 470" xmlns="http://www.w3.org/2000/svg" font-family="PingFang SC,sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect x="10" y="10" width="980" height="52" rx="10" fill="#1e3a8a"/>
+  <text x="500" y="42" fill="#fff" font-size="16" text-anchor="middle" font-weight="600">INDEX.md 总索引 —— 全库入口与姊妹库(diffusion_ot_survey)互链</text>
+
+  <line x1="500" y1="62" x2="500" y2="80" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="10" y="84" width="480" height="70" rx="10" fill="#ecfdf5" stroke="#0d9488"/>
+  <text x="26" y="110" font-size="14" font-weight="600" fill="#0f766e">L1 教材基础层（10 份教材）</text>
+  <text x="26" y="134" font-size="12.5" fill="#334155">OT_book / Multi_OT_book 精读主线＋Gallager 随机过程＋6 本辅助</text>
+
+  <rect x="510" y="84" width="480" height="70" rx="10" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="526" y="110" font-size="14" font-weight="600" fill="#1d4ed8">L2 经典论文链（14 篇奠基文献）</text>
+  <text x="526" y="134" font-size="12.5" fill="#334155">Brenier → Benamou-Brenier → Cuturi → Agueh-Carlier → Léonard → FM</text>
+
+  <line x1="250" y1="154" x2="250" y2="172" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="750" y1="154" x2="750" y2="172" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="10" y="176" width="980" height="70" rx="10" fill="#fefce8" stroke="#ca8a04"/>
+  <text x="26" y="202" font-size="14" font-weight="600" fill="#a16207">L3 会议前沿层（111 篇正式/已接收 [P]/[A]＋11 篇预印本 [R]）</text>
+  <text x="26" y="226" font-size="12.5" fill="#334155">七大会议 2024–2026 逐年核验；严格区分 proceedings / 官方接收 / 预印本，拒绝“submitted to”冒充</text>
+
+  <line x1="500" y1="246" x2="500" y2="264" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="10" y="268" width="480" height="70" rx="10" fill="#fdf2f8" stroke="#db2777"/>
+  <text x="26" y="294" font-size="14" font-weight="600" fill="#be185d">L4 精读层（12 个论文包）</text>
+  <text x="26" y="318" font-size="12.5" fill="#334155">paper.pdf＋paper.txt＋中文 report.md＋metadata.json，MANIFEST 管理</text>
+
+  <rect x="510" y="268" width="480" height="70" rx="10" fill="#f0fdfa" stroke="#0d9488"/>
+  <text x="526" y="294" font-size="14" font-weight="600" fill="#0f766e">L5 实践层（9 个软件工具＋benchmark 模板）</text>
+  <text x="526" y="318" font-size="12.5" fill="#334155">POT / OTT-JAX / GeomLoss / FlashSinkhorn / TorchCFM / Riemannian-FM…</text>
+
+  <line x1="250" y1="338" x2="250" y2="356" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="750" y1="338" x2="750" y2="356" stroke="#94a3b8" stroke-width="2" marker-end="url(#arr)"/>
+
+  <rect x="10" y="360" width="980" height="70" rx="10" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text x="26" y="386" font-size="14" font-weight="600" fill="#6d28d9">L6 路线层（1 条 12 周主线＋5 条专题路线＋先读 15 篇清单）</text>
+  <text x="26" y="410" font-size="12.5" fill="#334155">A:大规模Sinkhorn · B:黎曼OT · C:Barycenter · D:MMOT+SB · E:GW跨空间对齐 —— 每条带“研究切口”</text>
+
+  <text x="500" y="456" font-size="12" fill="#64748b" text-anchor="middle">阅读次序自上而下：先坐标系（L1/L2），再前沿（L3/L4），落到实验（L5），按路线执行（L6）</text>
+</svg>
+</div>
+
+<div class="card">
+<h3>分层动机</h3>
+<table>
+<tr><th>层</th><th>解决什么问题</th><th>没有这层会怎样</th></tr>
+<tr><td>L1 教材</td><td>建立对偶、Brenier、Sinkhorn、IPFP 的第一性推导</td><td>读前沿论文只能看懂摘要，无法判断贡献真伪</td></tr>
+<tr><td>L2 经典链</td><td>按问题（而非年代）补 14 个关键定理/算法源头</td><td>把 2013 年就有的结论当成新贡献</td></tr>
+<tr><td>L3 会议目录</td><td>2024–2026 七会议的可核验前沿地图</td><td>被 arXiv 洪流淹没，分不清正式与投稿</td></tr>
+<tr><td>L4 精读包</td><td>对 12 篇核心论文留下可复查的中文精读证据</td><td>「读过」退化成「见过标题」</td></tr>
+<tr><td>L5 软件栈</td><td>每个方向都有可跑的基线与统一 benchmark 字段</td><td>复现实验口径不一，速度对比失真</td></tr>
+<tr><td>L6 路线</td><td>把以上资产编译成带验收输出的执行计划</td><td>资料库沦为收藏夹</td></tr>
+</table>
+</div>
+
+<h2 id="s3">§3 调研成果统计</h2>
+<div class="card">
+<h3>3.1 会议论文覆盖（111 篇，程序化重数核验 2026-08-25）</h3>
+<table>
+<tr><th>会议</th><th>2024</th><th>2025</th><th>2026</th><th>小计</th><th>证据等级说明</th></tr>
+<tr><td>NeurIPS</td><td>8</td><td>8</td><td>—</td><td>16</td><td><span class="chip P">P</span>官方 proceedings；2026 论文集未发布，不占位</td></tr>
+<tr><td>ICML</td><td>6</td><td>10</td><td>16</td><td>32</td><td><span class="chip P">P</span>PMLR；2026 为<span class="chip A">A</span>官方 OpenReview/会议索引核验</td></tr>
+<tr><td>ICLR</td><td>7</td><td>6</td><td>8</td><td>21</td><td>2024 <span class="chip P">P</span>；2025/2026 <span class="chip A">A</span>官方 OpenReview</td></tr>
+<tr><td>CVPR</td><td>3</td><td>5</td><td>7</td><td>15</td><td><span class="chip P">P</span>CVF Open Access 正式页面</td></tr>
+<tr><td>ICCV</td><td>—</td><td>5</td><td>—</td><td>5</td><td><span class="chip P">P</span>双年会，2024/2026 非举办年</td></tr>
+<tr><td>ECCV</td><td>4</td><td>—</td><td>0*</td><td>4</td><td><span class="chip P">P</span>ECVA；*2026 论文集尚未上线（8-25 复检，见 §5）</td></tr>
+<tr><td>AAAI</td><td>8</td><td>4</td><td>6</td><td>18</td><td><span class="chip P">P</span>AAAI OJS 正式论文集</td></tr>
+<tr><td colspan="4"><b>合计 111 篇</b>＋11 篇跟踪预印本 <span class="chip R">R</span></td><td colspan="2" class="evidence">证据：CATALOG §3/§4；重数脚本见汇报生成记录</td></tr>
+</table>
+<div class="note">口径说明：「最近两年」在双年会与不同截稿日下不能机械解释为每会每年都有论文。目录以 2024-01-01 至 2026-07-31 的实际正式记录为准，快照与复检日期均写入文档头。</div>
+
+<h3>3.2 已精读并归档的 12 篇论文</h3>
+<table>
+<tr><th>方向</th><th>论文</th><th>状态</th></tr>
+<tr><td>GPU Sinkhorn</td><td>FlashSinkhorn: IO-Aware Entropic OT on GPU</td><td><span class="chip A">A</span>ICML 2026 Oral</td></tr>
+<tr><td>黎曼 OT</td><td>Riemannian Neural OT ／ Entropic Riemannian Neural OT</td><td><span class="chip R">R</span>2026 预印本 ×2</td></tr>
+<tr><td>Barycenter</td><td>Sobolev Gradient Ascent（ICLR 2026）／ Unified Wasserstein Barycenters ／ Signed Barycenter</td><td><span class="chip A">A</span>＋<span class="chip R">R</span>×2</td></tr>
+<tr><td>MMOT</td><td>Dynamical MMOT ／ Collision-based MMOT</td><td><span class="chip R">R</span>×2</td></tr>
+<tr><td>SB / 因果</td><td>Foundations of SB for Generative Modeling ／ Adapted Wasserstein Barycenters of GP</td><td><span class="chip R">R</span>×2</td></tr>
+<tr><td>GW / partial</td><td>Z-Gromov-Wasserstein ／ Optimal Partial Transport Graph Matching</td><td><span class="chip R">R</span>×2</td></tr>
+</table>
+<p class="evidence">证据：<code>INDEX.md</code> 精读表、<code>PAPERS_MANIFEST.json</code>（12/12 downloaded 校验通过）。</p>
+</div>
+
+<h2 id="s4">§4 核心调研发现（五条）</h2>
+<div class="card">
+<table>
+<tr><th>#</th><th>发现</th><th>对你的研究意味着什么</th></tr>
+<tr><td>1</td><td><b>FlashSinkhorn 的「Flash」在 I/O 而非数学</b>：目标函数与 Sinkhorn/KL 缩放完全一致，加速来自 tile/online-softmax 式 I/O-aware GPU kernel（ICML 2026 Oral）。</td><td>做速度对比必须固定同 cost、同 dtype、同误差判据；hardware speedup ≠ 复杂度改进。可与 FastSinkhorn、cuRegOT、HALO 横向做 Pareto 曲线（路线 A 验收项）。</td></tr>
+<tr><td>2</td><td><b>「黎曼流形＋OT」实为四种不同问题</b>：① ground space 是流形；② Wasserstein 空间自身的 Otto 几何；③ 用黎曼优化解 OT 相关问题（如 Bures-Wasserstein）；④ Riemannian flow matching。</td><td>读该方向论文第一件事是分类，避免把 tangent-space 欧氏近似误当 intrinsic 方法；曲率大/跨 cut locus 时二者差异会放大。</td></tr>
+<tr><td>3</td><td><b>Barycenter 已裂成六条路线</b>：经典/熵正则、exact grid（SGA, ICLR 2026）、exact heterogeneous（FRBary）、signed、robust/公平、structured。</td><td>熵正则 barycenter 有 blur/bias，选型先问 exact 还是 entropic、fixed 还是 free support；目录 §4.7 有实用选择表。</td></tr>
+<tr><td>4</td><td><b>MMOT 从显式 tensor 转向结构化</b>：动态 formulation（Dynamical MMOT）、MMOT×SB 交叉（3MSBM NeurIPS 2025、CellStream AAAI 2026、多边缘时序 SB matching ICML 2026）。</td><td>与你的 diffusion bridge / ASBS 方向直接相关：static coupling、dynamic action、path-space KL 三种 formulation 的对应关系是路线 D 的验收输出。</td></tr>
+<tr><td>5</td><td><b>三个值得做的研究空位</b>（FRONTIER §7）：FlashSinkhorn×manifold OT（intrinsic GPU kernel 尚缺）；Entropic RNOT×barycenter（流形上熵正则 barycenter 求解器空白）；MMOT×adapted/SB（因果约束的多边缘桥）。</td><td>每个空位都给了「为什么现在能做、缺什么组件」的分析，可作为选题候选直接推进。</td></tr>
+</table>
+</div>
+
+<h2 id="s5">§5 质量核验（宣称 vs 实测双口径）</h2>
+<div class="card">
+<table>
+<tr><th>核验项</th><th>历史宣称</th><th>2026-08-25 实测</th><th>结论</th></tr>
+<tr><td>交付文件存在性</td><td>目录/指南/教材/许可/索引 5 类</td><td><code>ls</code> 全部在盘，含 12 个论文包子目录</td><td class="ok">通过</td></tr>
+<tr><td>正式论文数</td><td>111 篇</td><td>程序化按节重数＝111（分会议明细见 §3.1）</td><td class="ok">通过</td></tr>
+<tr><td>预印本数</td><td>11 篇</td><td>重数＝11</td><td class="ok">通过</td></tr>
+<tr><td>Gallager PDF</td><td>392 页、可抽取、未加密</td><td><code>pdftotext</code> 抽取正常＋元数据 392 页；SHA-256 与许可记录在案</td><td class="ok">通过</td></tr>
+<tr><td>文档完整性</td><td>无占位/待补</td><td><code>rg</code> 检索 TODO/待补/FIXME＝0 命中</td><td class="ok">通过</td></tr>
+<tr><td>ECCV 2026 时效复检</td><td>目录注明「8 月下旬起随时可能上线，建议复检」</td><td>ECVA papers 页实测仍只收录到 ECCV 2024 → 无需补录，目录口径仍准确</td><td class="ok">通过</td></tr>
+<tr><td>NeurIPS 2026</td><td>论文集未发布、不占位</td><td>维持原状</td><td class="ok">通过</td></tr>
+</table>
+<p class="evidence">本表全部条目可由 shell 记录复查；无一处凭记忆填写。</p>
+</div>
+
+<h2 id="s6">§6 当前使用方式与学习路线</h2>
+<div class="card">
+<h3>6.1 入口与主线</h3>
+<ul>
+<li>入口永远是 <code>INDEX.md</code>；概念查询优先 OT4ML 交互书，定义/定理回教材，会议状态只认目录的 [P]/[A]/[R] 标签。</li>
+<li>主线：12 周路线（<code>BOOK_READING_GUIDE.md</code> §5）＝ OT_book Ch.2-4 → Benamou-Brenier → barycenter → Multi_OT_book IPFP/Dykstra → Gallager Markov/martingale → SB。</li>
+</ul>
+<h3>6.2 五条专题路线（带验收输出）</h3>
+<table>
+<tr><th>路线</th><th>周期</th><th>验收输出</th></tr>
+<tr><td>A · FlashSinkhorn 与大规模 Sinkhorn</td><td>4–6 周</td><td>同 cost/dtype/tolerance 下的 speed-memory-error Pareto 曲线</td></tr>
+<tr><td>B · 黎曼流形 OT</td><td>6–8 周</td><td>sphere/SPD 上 intrinsic / tangent / ambient 三基线对照</td></tr>
+<tr><td>C · Wasserstein barycenter</td><td>6–8 周</td><td>exact/entropic/debiased × fixed/free support 对照表＋实验</td></tr>
+<tr><td>D · MMOT 与 Schrödinger bridge</td><td>8–10 周</td><td>static coupling / dynamic action / path-space KL 三 formulation 对应关系</td></tr>
+<tr><td>E · GW 与跨空间对齐</td><td>5–7 周</td><td>GW/FGW/linearized 近似的精度-复杂度表</td></tr>
+</table>
+<p>若只想尽快形成前沿判断力：按目录 §9「先读 15 篇」执行（Cuturi 2013 → … → FlashSinkhorn → RNOT → FRBary）。</p>
+</div>
+
+<h2 id="s7">§7 下一步</h2>
+<div class="card">
+<table>
+<tr><th>#</th><th>事项</th><th>触发条件/时间</th><th>动作</th></tr>
+<tr><td>N1</td><td>ECCV 2026 补录</td><td>论文集上线（会议 9-10 开幕；8-25 复检未上线）</td><td>9 月上旬再查 ECVA papers 页，按 [P] 口径补录 OT 相关论文</td></tr>
+<tr><td>N2</td><td>NeurIPS 2026 补录</td><td>正式论文集发布后</td><td>同上，不提前用预印本占位</td></tr>
+<tr><td>N3</td><td>ICML 2026 链接升级</td><td>PMLR 卷稳定发布</td><td>把 16 条 [A] 的 OpenReview 链接替换为正式论文页并改标 [P]</td></tr>
+<tr><td>N4</td><td>月度维护</td><td>每月一次</td><td>按目录 §8.1 程序：官方源检索 → [R] 入库 → 证据升级 → benchmark 数字回验</td></tr>
+<tr><td>N5</td><td>与姊妹库交叉</td><td>随研究推进</td><td><code>../diffusion_ot_survey/</code>（451 篇文献）与本库共用证据分级，SB/FM 方向可互补检索</td></tr>
+</table>
+</div>
+
+<footer>
+生成：Cursor Agent · 2026-08-25 ｜ 数据来源：ot_variants_survey 全库文件＋会话「OT」历史（258 条消息）＋2026-08-25 磁盘/网络复检 ｜
+本汇报为活文档快照，后续更新以 <code>INDEX.md</code> 与目录文档头的复检日期为准。
+</footer>
+
+</div>
+</body>
+</html>
