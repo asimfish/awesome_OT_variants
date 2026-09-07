@@ -7,3 +7,4 @@ rsync -av --delete \
   --exclude '*.pdf' --exclude 'paper.txt' --exclude '.DS_Store' \
   --exclude '.git/' --exclude 'README.md' --exclude 'LICENSE' --exclude '.gitignore' --exclude 'scripts/' \
   "$SRC/" "$DST/"
+python3 "$DST/scripts/build_readme.py"
